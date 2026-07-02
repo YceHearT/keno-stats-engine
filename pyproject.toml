@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keno-stats-engine"
+version = "0.1.0"
+description = "Hypergeometric statistics and rarity-based scoring for keno-style lotteries. Analysis, not prediction."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Florian Eugen Sandu" }]
+keywords = ["keno", "lottery", "statistics", "hypergeometric", "probability"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.urls]
+Homepage = "https://lotoradar.com"
+Repository = "https://github.com/YceHearT/keno-stats-engine"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
